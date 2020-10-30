@@ -74,3 +74,22 @@ body {
     background: #f4f4f4;
     color: #333;
 }
+
+/* Animate */
+#page-1 h1, #page-1 p, #page-1 a {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
